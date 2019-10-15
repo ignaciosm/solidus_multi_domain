@@ -12,8 +12,8 @@ module SpreeMultiDomain
           end
         end
 
-        Spree::Config.searcher_class = Spree::Search::MultiDomain
-        ApplicationController.send :include, SpreeMultiDomain::MultiDomainHelpers
+        # Spree::Config.searcher_class = Spree::Search::MultiDomain
+        # ApplicationController.send :include, SpreeMultiDomain::MultiDomainHelpers
       end
 
       def admin_available?
